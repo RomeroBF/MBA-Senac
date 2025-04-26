@@ -11,4 +11,5 @@ st.dataframe(df.head())
 
 st.title('Dashboard de Produção de Máquinas')
 st.bar_chart(x,y)
-
+Qfalhas=df.groupby('Machine_Type')['Failures'].sum()
+st.bar_chart(Qfalhas)
