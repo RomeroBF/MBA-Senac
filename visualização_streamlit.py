@@ -7,15 +7,13 @@ Original file is located at
     https://colab.research.google.com/drive/1yllb_4coZESLbnv7eBxXYnlhAJIuirlO
 """
 
-pip install streamlit
-
 import pandas as pd #Criar dataframe
 import numpy as np
 import matplotlib.pyplot as plt # Criar gráficos
 import seaborn as sns
 import streamlit as st
 
-path='/content/sample_data/machinery_data.csv'
+path='machinery_data.csv'
 df=pd.read_csv(path)
 
 df.info()
