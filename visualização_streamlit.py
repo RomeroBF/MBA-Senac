@@ -6,6 +6,6 @@ df=pd.read_csv(path)
 
 st.title('Dashboard de Produção de Máquinas')
 y=df.groupby('Machine_Type')['Failures'].sum()
-fig, ax=plt.subplots()
-ax.bar(y['Machine_Type'],y['Failures'])
+fig, x=plt.subplots()
+x.bar(y.index,y.values)
 st.pyplot(fig)
