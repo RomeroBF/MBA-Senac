@@ -1,6 +1,6 @@
 import pandas as pd
 import streamlit as st
-import matplotlib.pyplot as plp
+import matplotlib.pyplot as plt
 path='machinery_data.csv'
 df=pd.read_csv(path)
 
