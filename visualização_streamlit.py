@@ -1,4 +1,5 @@
-
+import pandas as pd
+import streamlit as st
 path='machinery_data.csv'
 df=pd.read_csv(path)
 
