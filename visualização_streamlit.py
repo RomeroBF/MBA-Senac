@@ -5,7 +5,7 @@ path='machinery_data.csv'
 df=pd.read_csv(path)
 x=df['Machine_Type'].unique()
 y=df.groupby('Machine_Type')['Failures'].sum()
-
+st.dataframe(df.head()
 
 
 
